@@ -13,6 +13,8 @@ The `community.docker collection <https://galaxy.ansible.com/community/docker>`_
 Requirements
 ------------
 
+BIG SILLY CHANGE FOR NO REASON
+
 Most of the modules and plugins in community.docker require the `Docker SDK for Python <https://docker-py.readthedocs.io/en/stable/>`_. The SDK needs to be installed on the machines where the modules and plugins are executed, and for the Python version(s) with which the modules and plugins are executed. You can use the :ref:`community.general.python_requirements_info module <ansible_collections.community.general.python_requirements_info_module>` to make sure that the Docker SDK for Python is installed on the correct machine and for the Python version used by Ansible.
 
 Note that plugins (inventory plugins and connection plugins) are always executed in the context of Ansible itself. If you use a plugin that requires the Docker SDK for Python, you need to install it on the machine running ``ansible`` or ``ansible-playbook`` and for the same Python interpreter used by Ansible. To see which Python is used, run ``ansible --version``.

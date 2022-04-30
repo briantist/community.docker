@@ -24,7 +24,7 @@ jobs:
       base-url: https://${{ github.repository_owner }}.github.io/${{ github.repository.name }}/
       action: ${{ (github.event.action == 'closed' || needs.build-docs.outputs.changed != 'true') && 'teardown' || 'publish' }}
     secrets:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   comment:
     permissions:

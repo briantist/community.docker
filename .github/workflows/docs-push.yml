@@ -7,6 +7,8 @@ on:
     branches:
       - main
       - test/pr/*
+    tags:
+      - '*'
 
 jobs:
   build-docs:
